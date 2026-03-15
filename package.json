@@ -1,0 +1,33 @@
+{
+  "name": "zfilterhub",
+  "packageManager": "yarn@4.13.0",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "main": "./src/ZFilterHub.js",
+  "exports": {
+    ".": {
+      "import": "./src/ZFilterHub.js",
+      "types": "./src/ZFilterHub.d.ts"
+    }
+  },
+  "files": [
+    "/src",
+    "/tsconfig.json",
+    "/.yarn",
+    "/.yarnrc.yml",
+    "/yarn.lock"
+  ],
+  "preferUnplugged": true,
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "yarn dlx -p typescript tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "@types/node": "^24.12.0",
+    "eventemitter3": "^5.0.4",
+    "typescript": "^6.0.1-rc"
+  }
+}
