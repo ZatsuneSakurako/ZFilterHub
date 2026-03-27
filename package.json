@@ -23,11 +23,9 @@
     "postinstall": "yarn dlx -p typescript tsc",
     "watch": "tsc --watch"
   },
-  "devDependencies": {
-  },
   "dependencies": {
     "@types/node": "^24.12.0",
     "eventemitter3": "^5.0.4",
-    "typescript": "^6.0.1-rc"
+    "typescript": "^6.0.2"
   }
 }
